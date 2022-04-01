@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="row">
-    <div class="col-sm-3">
-        <div class="card" style="width: 18rem;">
+<div class="row row-cols1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card" style="width: 18rem; height: 25rem">
             <img src="{{url_for('static', filename='images/SPD3303X.jpg') }}" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">SPD3303X Power Supply</h5>
@@ -13,9 +13,10 @@
         </div>
     </div>
 
-    <div class="col-sm-3">
-        <div class="card" style="width: 18rem;">
-            <img src="{{url_for('static', filename='images/laser_quantum.jpg') }}" class="card-img-top">
+    <div class="col">
+        <div class="card" style="width: 18rem; height: 25rem">
+            <img src="{{url_for('static', filename='images/laser_quantum.jpg') }}" style="width: 12.5rem"
+                class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">Laser Quantum Controller</h5>
                 <p class="card-text">Open the control software for the GEM laser</p>
@@ -24,13 +25,81 @@
         </div>
     </div>
 
-    <div class="col-sm-3"></div>
-    <div class="card" style="width: 18rem;">
-        <img src="{{url_for('static', filename='images/SPD3303X.jpg') }}" class="card-img-top">
-        <div class="card-body">
-            <h5 class="card-title">SPD3303X Power Supply</h5>
-            <p class="card-text">Open the power supply controller for the white light source and AOM</p>
-            <a href="/power_supply" class="btn btn-primary">Open</a>
+    <div class="col">
+        <div class="card" style="width: 18rem; height: 25rem">
+            <img src="{{url_for('static', filename='images/toptica.jpg') }}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Toptica Laser Controller</h5>
+                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+                <a href="/toptica_ controller" class="btn btn-primary">Open</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem; height: 25rem">
+            <img src="{{url_for('static', filename='images/montana_s50.png') }}" style="height:14rem; width:10rem"
+                class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Montana VNC Viewer</h5>
+                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+                <a href="/montana_vnc" class="btn btn-primary">Open</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem; height: 25rem">
+            <img src="{{url_for('static', filename='images/isomet_aom.jpg') }}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">AOM Enable</h5>
+                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+                <a href="/aom_enable" class="btn btn-primary">Open</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem; height: 25rem">
+            <img src="{{url_for('static', filename='images/pl_nv_array.jpg') }}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Photoluminescence Imaging</h5>
+                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+                <a href="/pl_scan_labview" class="btn btn-primary">Open</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem; height: 25rem">
+            <img src="{{url_for('static', filename='images/isomet_aom.jpg') }}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Photoluminescence Excitation</h5>
+                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+                <a href="/ple_labview" class="btn btn-primary">Open</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem; height: 25rem">
+            <img src="{{url_for('static', filename='images/isomet_aom.jpg') }}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Wavemeter</h5>
+                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+                <a href="/wavemeter" class="btn btn-primary">Open</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem; height: 25rem">
+            <img src="{{url_for('static', filename='images/camera.jpg') }}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Camera</h5>
+                <p class="card-text"></p>
+                <a href="/power_supply" class="btn btn-primary">Open</a>
+            </div>
         </div>
     </div>
 </div>
