@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card" style="width: 18rem;">
+    <img src={{ url_for('index', filename='/images/SPD3303X.jpg') }} class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+        <a href="#" class="btn btn-primary">Open</a>
+    </div>
+</div>
+{% endblock %}
