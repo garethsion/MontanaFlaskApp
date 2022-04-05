@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
-
+<!-- <link rel="stylesheet" href="static/css/main.css"> -->
 {% block content %}
 
-<div class="input-group mb-3">
+<!-- <div class="input-group mb-3">
     <button class="btn btn-outline-secondary" type="button" id="button-addon1" value="ch1_setV">Set Voltage</button>
     <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
         aria-describedby="button-addon1">
@@ -23,6 +23,13 @@
     <input type="text" class="form-control" placeholder="Recipient's username"
         aria-label="Recipient's username with two button addons">
     <button class="btn btn-outline-secondary" type="button">Button</button>
+</div> -->
+
+<div class="container">
+    <div class="toggle-btn onclick=this.classList.toggle('active')">
+        <div class="inner-circle">  
+        </div>
+    </div>
 </div>
 
-{% endblock %}
+{% endblock %} 

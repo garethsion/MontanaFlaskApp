@@ -3,38 +3,41 @@
 {% block content %}
 <div class="row row-cols1 row-cols-md-3 g-4">
     <div class="col">
-        <div class="card h-50">
-            <!-- <div class="card" style="width: 18rem; height: 25rem"> -->
-            <img src="{{url_for('static', filename='images/SPD3303X.jpg') }}" class="card-img-top">
-            <div class="card-body">
-                <h5 class="card-title">SPD3303X Power Supply</h5>
-                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+        <div class="card">
+            <div class="embed-responsive embed-responsive-16by9">
+               <img src="{{url_for('static', filename='images/SPD3303X.jpg') }}" class="card-img-top embed-responsive-item">
+            </div>
+            <div class="card-block">
+              <h4 class="card-title">Power Supply</h4>
+              <p class="card-text">Open the power supply controller for the white light source and AOM</p>
             </div>
             <div class="card-footer">
                 <a href="/power_supply" class="btn btn-primary">Open</a>
             </div>
-        </div>
+          </div>
     </div>
 
     <div class="col">
-        <div class="card h-50">
-            <img src="{{url_for('static', filename='images/laser_quantum.jpg') }}" class="card-img-top">
-            <div class="card-body">
-                <h5 class="card-title">Laser Quantum Controller</h5>
-                <p class="card-text">Open the control software for the GEM laser</p>
-            </div>
-            <div class="card-footer">
-                <a href="/laser_controller" class="btn btn-primary">Open</a>
-            </div>
+    <div class="card">
+        <div class="embed-responsive embed-responsive-16by9">
+           <img src="{{url_for('static', filename='images/laser_quantum.jpg') }}" class="card-img-top embed-responsive-item">
         </div>
-    </div>
+        <div class="card-block">
+          <h4 class="card-title">Laser Quantum Controller</h4>
+          <p class="card-text">Open the control software for the GEM laser. Sopftware opens externally.</p>
+        </div>
+        <div class="card-footer">
+            <a href="/laser_controller" class="btn btn-primary">Open</a>
+        </div>
+      </div>
+      </div>
 
     <div class="col">
-        <div class="card h-50">
-            <img src="{{url_for('static', filename='images/toptica.jpg') }}" class="card-img-top">
-            <div class="card-body">
+        <div class="embed-responsive embed-responsive-16by9">
+            <img src="{{url_for('static', filename='images/toptica.jpg') }}" class="card-img-top embed-responsive-item">
+            <div class="card-body embed-responsive-item">
                 <h5 class="card-title">Toptica Laser Controller</h5>
-                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+                <p class="card-text">Open the Toptica DLC 100 controller</p>
             </div>
             <div class="card-footer">
                 <a href="/toptica_controller" class="btn btn-primary">Open</a>
@@ -43,11 +46,11 @@
     </div>
 
     <div class="col">
-        <div class="card h-50">
-            <img src="{{url_for('static', filename='images/montana_s50.png') }}" class="card-img-top">
-            <div class="card-body">
+        <div class="embed-responsive embed-responsive-16by9">
+            <img src="{{url_for('static', filename='images/montana_s50.png') }}" class="card-img-top embed-responsive-item">
+            <div class="card-body embed-responsive-item">
                 <h5 class="card-title">Montana VNC Viewer</h5>
-                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+                <p class="card-text">Open the VNC remote machine for the Montana</p>
             </div>
             <div class="card-footer">
                 <a href="/montana_vnc" class="btn btn-primary">Open</a>
@@ -56,11 +59,11 @@
     </div>
 
     <div class="col">
-        <div class="card h-50">
-            <img src="{{url_for('static', filename='images/isomet_aom.jpg') }}" class="card-img-top">
-            <div class="card-body">
+        <div class="embed-responsive embed-responsive-16by9">
+            <img src="{{url_for('static', filename='images/isomet_aom.jpg') }}" class="card-img-top embed-responsive-item">
+            <div class="card-body embed-responsive-item">
                 <h5 class="card-title">AOM Enable</h5>
-                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+                <p class="card-text">Open the labview program for turning on the AOM </p>
             </div>
             <div class="card-footer">
                 <a href="/aom_enable" class="btn btn-primary">Open</a>
@@ -69,11 +72,11 @@
     </div>
 
     <div class="col">
-        <div class="card h-50">
-            <img src="{{url_for('static', filename='images/pl_nv_array.jpg') }}" class="card-img-top">
+        <div class="embed-responsive embed-responsive-16by9">
+            <img src="{{url_for('static', filename='images/pl_nv_array.jpg') }}" class="card-img-top embed-responsive-item">
             <div class="card-body">
                 <h5 class="card-title">Photoluminescence Imaging</h5>
-                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+                <p class="card-text">Open the labview program for PL scans</p>
             </div>
             <div class="card-footer">
                 <a href="/pl_scan_labview" class="btn btn-primary">Open</a>
@@ -82,11 +85,11 @@
     </div>
 
     <div class="col">
-        <div class="card h-50">
-            <img src="{{url_for('static', filename='images/ple.jpg') }}" class="card-img-top">
+        <div class="embed-responsive embed-responsive-16by9">
+            <img src="{{url_for('static', filename='images/ple.jpg') }}" class="card-img-top embed-responsive-item">
             <div class="card-body">
                 <h5 class="card-title">Photoluminescence Excitation</h5>
-                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+                <p class="card-text">Open the labview program for PLE</p>
             </div>
             <div class="card-footer">
                 <a href="/ple_labview" class="btn btn-primary">Open</a>
@@ -95,11 +98,11 @@
     </div>
 
     <div class="col">
-        <div class="card h-50">
-            <img src="{{url_for('static', filename='images/wavemeter.png') }}" class="card-img-top">
+        <div class="embed-responsive embed-responsive-16by9">
+            <img src="{{url_for('static', filename='images/wavemeter.png') }}" class="card-img-top embed-responsive-item">
             <div class="card-body">
                 <h5 class="card-title">Wavemeter</h5>
-                <p class="card-text">Open the power supply controller for the white light source and AOM</p>
+                <p class="card-text">Open the wavemeter software (takes time to load)</p>
             </div>
             <div class="card-footer">
                 <a href="/wavemeter" class="btn btn-primary">Open</a>
@@ -108,11 +111,11 @@
     </div>
 
     <div class="col">
-        <div class="card h-50">
-            <img src="{{url_for('static', filename='images/camera.jpg') }}" class="card-img-top">
+        <div class="embed-responsive embed-responsive-16by9">
+            <img src="{{url_for('static', filename='images/camera.jpg') }}" class="card-img-top embed-responsive-item">
             <div class="card-body">
                 <h5 class="card-title">Camera</h5>
-                <p class="card-text"></p>
+                <p class="card-text">Open the camera program</p>
             </div>
             <div class="card-footer">
                 <a href="/power_supply" class="btn btn-primary">Open</a>

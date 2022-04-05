@@ -1,10 +1,11 @@
 #!usr/bin/env python
 import spd3303x
 import laser_quantum
+import toptica
 from flask import Flask
 from flask import render_template
 from flask import request
-app = Flask(__name__)
+app = Flask(__name__, static_folder="/static")
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -24,12 +25,12 @@ def laser_controller():
 
 @app.route('/toptica_controller')
 def toptica_controller():
-    # call_lq = laser_quantum.call_lq()
+    call_toptica = toptica.call_toptica()
     return render_template('toptica_controller.html')
 
 @app.route('/montana_vnc')
 def montana_vnc():
-    # call_lq = laser_quantum.call_lq()
+    # call_toptica = toptica.call_toptica()
     return render_template('montana_vnc.html')
 
 @app.route('/aom_enable')
